@@ -5,8 +5,6 @@ import os
 import sys
 import json
 import urllib3
-import io
-import csv
 from settings import authsettings
 
 
@@ -105,7 +103,8 @@ def staxxquery(staxxurl, staxxport, authtoken, query, format):
     elif format == 'c':
         ioctype = 'csv'
     else:
-        print('Invalid format. Valid choices are j (json) and c (csv).')
+        print('Bad format. Valid choices are j (json) and c (csv).')
+        sys.exit()
 
     uri = staxxurl + ':' + staxxport + '/api/v1/intelligence'
     d = json.dumps({"token": authtoken, "query": query,
@@ -141,6 +140,7 @@ def writeiocs(iocs, path, name, format):
             outfile.write(iocs)
     else:
         print('Bad format. Valid choices are (j)son and (c)sv.')
+        sys.exit()
 
 
 if __name__ == '__main__':
