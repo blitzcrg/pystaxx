@@ -1,5 +1,5 @@
 # pystaxx
-Utility for pulling IOCs from an [Anomali STAXX](https://www.anomali.com/platform/staxx) server formatted as JSON (default) or CSV. Accepts any properly formatted STAXX query (read the [STAXX user guide](https://update.anomali.com/staxx/docs/Anomali_STAXX_Installation_&_Administration_Guide_v2.2.pdf).
+Utility for pulling IOCs from an [Anomali STAXX](https://www.anomali.com/platform/staxx) server formatted as JSON (default) or CSV. Accepts any properly formatted STAXX query (read the [STAXX user guide](https://update.anomali.com/staxx/docs/Anomali_STAXX_Installation_&_Administration_Guide_v2.2.pdf)).
 ```
 usage: pystaxx.py [-h] [-f {j,c}] [-p PATH] [-n NAME] query
 
