@@ -1,3 +1,5 @@
+Since I haven't worked with the Proofpoint APIs or the SIEM this was originally written to support in many years, it's unlikely this script can be used as written. 
+
 # pystaxx
 Utility for pulling IOCs from an [Anomali STAXX](https://www.anomali.com/platform/staxx) server formatted as JSON (default) or CSV. Accepts any properly formatted STAXX query (read the [STAXX user guide](https://update.anomali.com/staxx/docs/Anomali_STAXX_Installation_&_Administration_Guide_v2.2.pdf)).
 
